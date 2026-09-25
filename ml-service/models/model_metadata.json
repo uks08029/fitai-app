@@ -1,0 +1,48 @@
+{
+  "model_name": "RandomForestRegressor",
+  "algorithm": "Random Forest Regressor (Ensemble Bagging Regression)",
+  "description": "Predicts personalized daily caloric requirement based on biometric, lifestyle, and goal features.",
+  "trained_at": "2026-09-24T23:33:29.448729",
+  "training_samples": 2400,
+  "test_samples": 600,
+  "features": [
+    "age",
+    "height",
+    "weight",
+    "bmi",
+    "exercise_frequency",
+    "gender_male",
+    "gender_female",
+    "act_sedentary",
+    "act_light",
+    "act_moderate",
+    "act_active",
+    "act_very_active",
+    "goal_lose",
+    "goal_maintain",
+    "goal_gain",
+    "goal_build_muscle"
+  ],
+  "metrics": {
+    "mae": 98.25,
+    "rmse": 127.64,
+    "r2_score": 0.9553
+  },
+  "scaler": {
+    "means": [
+      43.444,
+      169.4589333333334,
+      69.47563333333315,
+      24.27206333333334,
+      2.699
+    ],
+    "stds": [
+      14.793023040158705,
+      9.987280253513559,
+      13.319374970278792,
+      4.659457512342214,
+      1.9144361223782411
+    ]
+  },
+  "version": "1.0.0"
+}
