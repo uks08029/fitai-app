@@ -33,7 +33,7 @@ export const WebSocketProvider = ({ children }) => {
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     const host = window.location.hostname;
     // Backend runs on port 5000 in dev
-    const wsUrl = `${protocol}//${host}:5000`;
+    const wsUrl = `wss://fitai-backend.onrender.com`;
 
     try {
       setConnectionStatus('connecting');
